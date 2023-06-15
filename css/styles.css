@@ -103,6 +103,10 @@ right: 5%;
   color: #fff;
 }
 
+.rating i {
+  color: var(--pink)!important;
+}
+
 @media (min-width: 992px) {
   .nav-item {
     border-bottom: none;
