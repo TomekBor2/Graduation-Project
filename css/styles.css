@@ -71,6 +71,11 @@ body {
 border-color: var(--pink)!important;
 }
 
+.carousel-item h1,
+.carousel-item h2 {
+  text-shadow: 1px 1px 1px #000;
+}
+
 @media (min-width: 992px) {
   .nav-item {
     border-bottom: none;
