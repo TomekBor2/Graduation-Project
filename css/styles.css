@@ -76,6 +76,33 @@ border-color: var(--pink)!important;
   text-shadow: 1px 1px 1px #000;
 }
 
+/* collection */
+
+.title h2::before {
+  position: absolute;
+  background-color: var(--pink);
+  height: 50px;
+  width: 4PX;
+  content: "";
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.active-filter-btn {
+  background-color: var(--pink)!important;
+  color: #fff!important;
+  border-color: var(--pink)!important;
+}
+
+.sale-btn {
+right: 5%;
+  top: 5%;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: #fff;
+}
+
 @media (min-width: 992px) {
   .nav-item {
     border-bottom: none;
