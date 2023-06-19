@@ -15,7 +15,6 @@ body {
   background-color: var(--pink) !important;
 }
 
-
 .btn:not(.nav-btns button) {
   background-color: #fff;
   color: rgb(85, 85, 85);
@@ -106,6 +105,35 @@ right: 5%;
 .rating i {
   color: var(--pink)!important;
 }
+
+/* special */
+
+.heart-btn {
+  font-size: 1.3rem;
+  left: 280px;
+  top: 1%;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: var(--pink);
+}
+
+/* offers */
+#offers {
+  background: url(../images/offer_img.jpg)center/cover no-repeat;
+  background-size: cover;
+}
+
+#offers .row {
+  min-height: 60vh;
+  font-size: 28px;
+  width: 100%;
+}
+
+.offers-content {
+  color: white;
+}
+
+/* media queries */
 
 @media (min-width: 992px) {
   .nav-item {
