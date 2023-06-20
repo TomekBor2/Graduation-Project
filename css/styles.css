@@ -29,6 +29,7 @@ body {
   border-color: var(--pink);
 }
 
+
 /* navbar */
 .navbar {
   box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
@@ -72,7 +73,7 @@ border-color: var(--pink)!important;
 
 .carousel-item h1,
 .carousel-item h2 {
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px rgba(85, 85, 85, 0.5);
 }
 
 /* collection */
@@ -110,10 +111,8 @@ right: 5%;
 
 .heart-btn {
   font-size: 1.3rem;
-  left: 280px;
-  top: 1%;
-  padding: 0.5rem;
-  border-radius: 50%;
+  right: 5%;
+  top: 2%;
   color: var(--pink);
 }
 
@@ -124,14 +123,33 @@ right: 5%;
 }
 
 #offers .row {
-  min-height: 60vh;
-  font-size: 28px;
+  min-height: 80vh;
   width: 100%;
 }
 
-.offers-content {
+.offers-text {
   color: white;
+  text-shadow: 1px 1px 1px rgba(85, 85, 85, 0.5);
 }
+
+.offers-text h2 {
+  font-size: 60px;
+}
+
+.offers-text span {
+  font-size: 32px;
+}
+
+
+.buy-btn {
+  border-color: #fff!important;
+}
+
+.buy-btn:hover {
+  border-color: var(--pink)!important;
+}
+
+
 
 /* media queries */
 
