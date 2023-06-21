@@ -4,6 +4,7 @@
   --lg-font: "Kaisei Tokumin", serif;
   --sm-font: "Poppins", sans-serif;
   --pink: #e5345b;
+  --gray: rgb(85, 85, 85);
 }
 
 body {
@@ -149,7 +150,47 @@ right: 5%;
   border-color: var(--pink)!important;
 }
 
+/* newsletter */
 
+#newsletter p {
+  max-width: 700px;
+}
+
+#newsletter .form-control {
+  max-width: 500px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+
+#newsletter .btn {
+  background-color: var(--pink)!important;
+  color: #fff;
+  border-color:rgba(85, 85, 85, 0.5)
+}
+
+/* footer */
+
+footer .brand {
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
+}
+
+footer a{
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+footer a:hover{
+  color: var(--pink)!important;
+}
+
+.list-unstyled li {
+  background-color: #212529!important;
+  color: #6c757d;
+  border: none;
+}
 
 /* media queries */
 
