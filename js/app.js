@@ -1,16 +1,25 @@
-const myCarouselElement = document.querySelector('#header')
+let productsHTML = ""
 
-const carousel = new bootstrap.Carousel(myCarouselElement, {
-  interval: 5000,
-  touch: false
+products.forEach((product) => {
+    productsHTML += `
+<div class="col-md-6 col-lg-4 col-xl-3 py-3 ${product.category}">
+<div class="collection-img position-relative">
+    <img src="${product.image}" class = "w-100">
+    <span class="position-absolute sale-btn bg-primary">sale</span>
+</div>
+<div class="text-center">
+    <div class="rating ">
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+        <span><i class="fas fa-star"></i></span>
+    </div>
+    <p class="my-1">${product.name}</p>
+    <span class="fw-bold">$ ${product.priceCents / 100}</span>
+</div>
+</div>
+    `
 })
 
-// init Isotope
-var $grid = $('.collection-list').isotope({
-  // options
-});
-// filter items on button click
-$('.filter-button-group').on( 'click', 'button', function() {
-  var filterValue = $(this).attr('data-filter');
-  $grid.isotope({ filter: filterValue });
-});
+document.querySelector(".collection-list").innerHTML = productsHTML

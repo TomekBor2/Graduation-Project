@@ -30,6 +30,10 @@ body {
   border-color: var(--pink);
 }
 
+.fa-shopping-cart {
+  color: #212529;
+}
+
 
 /* navbar */
 .navbar {
@@ -78,6 +82,10 @@ border-color: var(--pink)!important;
 }
 
 /* collection */
+
+#collection {
+  height: 123vh; 
+}
 
 .title h2::before {
   position: absolute;
