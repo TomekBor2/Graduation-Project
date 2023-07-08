@@ -18,8 +18,17 @@ products.forEach((product) => {
     <p class="my-1">${product.name}</p>
     <span class="fw-bold">$ ${product.priceCents / 100}</span>
 </div>
+<div class = "text-center">
+<button class = "btn btn-primary mt-3 js-add-to-cart" data-product-id="${product.id}">Add to Cart</button>
+</div>
 </div>
     `
 })
 
 document.querySelector(".collection-list").innerHTML = productsHTML
+document.querySelectorAll(".js-add-to-cart").forEach((button) => {
+    button.addEventListener("click", () => {
+        console.log("clicked")
+        console.log(button.dataset)
+    })
+})
