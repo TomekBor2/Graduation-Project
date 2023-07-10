@@ -21,24 +21,34 @@ const products = [
     category: "new"
   },
   {
-    id: "p3", 
+    id: "p4", 
     image: "images/c_shirt-girl.png",
     name: "Girl shirt", 
     priceCents: 2500,
     category: "best"
   },
   {
-    id: "p4", 
+    id: "p5", 
     image: "images/c_t-shirt_men.png",
     name: "Men shirt",
     priceCents: 4200,
     category: "feat"
   },
   {
-    id: "p5", 
+    id: "p6", 
     image: "images/c_tunic-shirt_girl.png",
     name: "Tunic shirt",
     priceCents: 3800,
     category: "new"
+  }
+]
+
+
+const special = [
+  {
+    id: "s1",
+    image: "images/special_product_1.jpg",
+    name: "Shirt",
+    priceCents: 4000
   }
 ]
