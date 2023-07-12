@@ -51,6 +51,7 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
       })
   
       document.querySelector('.js-cart-quantity').innerHTML = cartQuantity
-  
+      localStorage.setItem("data", cartQuantity)
+      
     })
   })

@@ -81,7 +81,7 @@ border-color: var(--pink)!important;
   text-shadow: 1px 1px 1px rgba(85, 85, 85, 0.5);
 }
 
-#collection {
+.collection-list {
   height: 123vh; 
 }
 
