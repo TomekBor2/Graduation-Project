@@ -49,9 +49,14 @@ document.querySelectorAll(".js-add-to-cart").forEach((button) => {
       cart.forEach((item) => {
         cartQuantity += item.quantity
       })
-  
-      document.querySelector('.js-cart-quantity').innerHTML = cartQuantity
-      localStorage.setItem("data", cartQuantity)
-      
+      localStorage.setItem('data', JSON.stringify(cart))
+      calculation()
     })
   })
+
+  let calculation = () => {
+    let cartIcon = document.querySelector('.js-cart-quantity')
+    cartIcon.innerHTML = cart.map((x) => x.quantity).reduce((x, y) => x + y, 0)
+  }
+
+  calculation()
